@@ -6,6 +6,7 @@
   --grey-dark: #414141;
   --grey-light: #363636;
   --grey-d9: #d9d9d9;
+  --grey-2d: #2d2d2d;
   --yellow: #FF9A03;
   --yellow-hover: #ffa200;
   --footer: #212121;
@@ -518,16 +519,15 @@
 ***************************************************************************************************/
 .cases {
   padding-top: 57px;
-  padding-bottom: 119px;
+  padding-bottom: 143px;
   background: linear-gradient(167.31deg, #EBEBEB 3.76%, #F3F3F3 32.96%, #DDDDDD 62.15%, #FAFAFA 93.1%, rgba(219, 219, 219, 0) 115.87%);
 }
 
 .cases__title {
-  font-style: normal;
   font-weight: 800;
   font-size: 30px;
-  line-height: 36px;
-  color: var(--grey-main);
+  line-height: 37px;
+  color: var(--grey-2d);
 
   display: flex;
   justify-content: center;
@@ -535,52 +535,57 @@
   margin-bottom: 91px;
 }
 
-.cases__grid {
+.cases__flex {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
-
+  justify-content: center;
 }
 
-.cases__grid-img-wrapper {
-  flex: 0 0 30%;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  cursor: pointer;
-
+.cases__flex a {
+  flex: 0 0 33%;
   margin-bottom: 28px;
 }
 
-.cases__grid-img:hover ~ .cases__grid-hover {
-  bottom: 0;
-  display: flex;
-  justify-content: left;
-  align-items: center;
+.cases__flex-item {
+  position: relative;
 }
 
-.cases__grid-hover {
+.cases__flex-item-img {
+  display: flex;
+  justify-content: center;
+}
+
+.cases__flex-item-hover-wrapper {
   width: 100%;
   position: absolute;
-  bottom: -100px;
-  left: 0;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.cases__flex-item-hover {
+  width: 386px;
   height: 100px;
-  background: var(--yellow);
-  opacity: 75%;
-  display: none;
-  transition: 0.25s ease;
-
+  background: linear-gradient(100.26deg, #FFB414 13.53%, #FFCA59 30.28%, #FFB414 50.47%, #FFD16D 69.13%, #FFB414 86.65%);
+  padding: 0;
 }
 
-.cases__grid-hover span {
-  font-weight: 800;
+.cases__flex-item-hover-txt {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-size: 15px;
-  color: var(--white);
-  line-height: 23px;
-  opacity: 100%;
-  padding-left: 28px;
+  line-height: 18px;
+  color: var(--grey-2d);
+  margin: 23px 20px;
 }
+
+.cases__flex-item:hover .cases__flex-item-hover-wrapper {
+  visibility: visible;
+}
+
+
 
 /***************************************************************************************************
   # Footer
