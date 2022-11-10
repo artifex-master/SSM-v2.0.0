@@ -325,16 +325,6 @@
   .work-w-us .main-wrapper {
     width: 90%;
   }
-  
-  .header__nav {
-    position: fixed;
-    visibility: hidden;
-  }
-
-  .header__mobile-menu {
-    position: relative;
-    visibility: visible;
-  }
 
   .work-w-us__grid-item {
     flex: 0 0 50%;
@@ -457,6 +447,47 @@
     font-size: 12px;
  }
 
+}
+
+@media only screen and (max-width: 950px) {
+  .header {
+    width: 100%;
+    padding-top: 47px;
+    padding-bottom: 47px;
+  
+    display: flex;
+    justify-content: space-between;
+  
+    margin-bottom: 149px;
+
+    flex-direction: column;
+  }
+
+  .header__nav {
+    padding-top: 34px;
+  }
+
+  .header__nav ul {
+    justify-content: center;
+  }
+
+  .header__logo-span {
+    display: none;
+  }
+
+  .header__logo {
+    justify-content: center;
+  }
+
+  .header__logo-img {
+    display: none;
+  }
+
+  .header__logo-without-shadow-img {
+    display: block;
+    width: 138px;
+    height: 68px;
+  }
 }
 
 @media only screen and (max-width: 941px) {
@@ -755,6 +786,11 @@
   .head__subtitle {
     font-size: 20px;
   }
+  
+  .header__nav ul {
+    font-size: 13px;
+    gap: 15px;
+  }
 }
 
 @media only screen and (max-width: 468px) {
@@ -875,8 +911,8 @@
 
 @media only screen and (max-width: 428px) {
   .header__logo-without-shadow-img {
-    width: 116px;
-    height: 56px;
+    width: 136px;
+    height: 66px;
   }
 
   .header__mobile-menu {
