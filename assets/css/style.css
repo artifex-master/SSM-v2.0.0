@@ -18,6 +18,22 @@
   margin: 0 auto;
 }
 
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--white); }
+::-webkit-scrollbar-thumb {
+  height: 220px;
+  border-radius: 8px;
+  background: var(--yellow-hover);
+}
+
+::-webkit-scrollbar-thumb:hover { 
+  background: var(--grey-2d); 
+  cursor: pointer;
+
+}
+
+
+
 /********************************************************
   # Buttons
 *********************************************************/
@@ -111,37 +127,37 @@
   -moz-box-shadow: -2px 29px 16px 3px rgba(0,0,0,0.15); 
 }
 
-/********** Menu Burger **************/
-.header__mobile-menu {
-  display: flex;
-  flex-direction: column;
-  padding-top: 28px;
+/*-----------------------------------*\
+ * #GO TO TOP
+\*-----------------------------------*/
 
+.go-top {
   position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: red;
+  color: var(--white);
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.5);
+  opacity: 0;
   visibility: hidden;
-
-  gap: 10px;
+  pointer-events: none;
+  transition: opacity 0.25s ease-in;
 }
 
-.header__mobile-menu .line {
-  width: 38px;
-  height: 2px;
-  background: var(--black);
-  border: 0;
-  transition: 0.25s ease;
+.go-top:hover { --amaranth: hsl(349, 69%, 43%); }
+
+.go-top.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
 }
 
-.header__mobile-menu.active .line-one {
-  transform: translateY(12px) rotate(45deg);
-}
-
-.header__mobile-menu.active .line-two {
-  transition: 0.01s; visibility: hidden;
-}
-
-.header__mobile-menu.active .line-three {
-  transform: translateY(-12px) rotate(-45deg);
-}
 
 /***************************************************************************************************
   # Секция №1: "Выдвигающееся меню"
