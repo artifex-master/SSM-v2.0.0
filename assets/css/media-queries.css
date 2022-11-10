@@ -52,7 +52,7 @@
   }
 
   .head-form__input {
-    width: 660px;
+    width: 420px;
   }
 
   .head {
@@ -712,6 +712,7 @@
   .head__title {
     width: 100%;
     font-size: 33px;
+    line-height: 46px;
   }
 
   .head__subtitle {
@@ -721,8 +722,41 @@
   .head-form-title {
     display: none;
   }
+
   .head__form-send {
-    display: none;
+    width: max-content;
+    padding-top: 26px;
+    padding-right: 12px;
+    padding-bottom: 26px;
+    padding-left: 12px;
+  
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+  }
+
+
+
+
+
+  .head-form__input {
+    width: 280px;
+    height: 48px;
+    background: #FFF;
+    border: 0;
+    font-size: 18px;
+    color: var(--black);
+    padding-left: 12px;
+  }
+
+  .head__form-send button {
+    height: 48px;
+    font-size: 18px;
+    padding-top: 18px;
+    padding-right: 14px;
+    padding-bottom: 14px;
+    padding-left: 12px;
   }
 
 
@@ -1017,6 +1051,8 @@
   .head__title {
     width: 100%;
     font-size: 27px;
+    line-height: 42px;
+
   }
 
   .about-us__bg {
@@ -1051,6 +1087,29 @@
     flex-direction: column-reverse;
   
     gap: 42px;
+  }
+
+}
+
+@media only screen and (max-width: 356px) {
+
+  .head-form__input {
+    width: 240px;
+    height: 48px;
+    background: #FFF;
+    border: 0;
+    font-size: 18px;
+    color: var(--black);
+    padding-left: 12px;
+  }
+
+  .head__form-send button {
+    height: 48px;
+    font-size: 18px;
+    padding-top: 18px;
+    padding-right: 14px;
+    padding-bottom: 14px;
+    padding-left: 12px;
   }
 
 }
