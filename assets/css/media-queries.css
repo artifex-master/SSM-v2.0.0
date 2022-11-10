@@ -927,9 +927,3 @@
 
 }
 
-@media only screen and (max-width: 360px) {
-  .about-us__bg {
-    height: 290px;
-  }
-
-}
