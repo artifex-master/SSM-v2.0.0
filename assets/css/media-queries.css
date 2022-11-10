@@ -28,15 +28,11 @@
   }
 
   .head__title {
-    width: 82%;
-    font-weight: 800;
-    font-size: 45px;
-    line-height: 43px;
-    color: var(--grey-main);
-    font-style: normal;
-    text-shadow: 0px 35px 25px rgba(0, 0, 0, 0.25);
-  
-    margin-bottom: 24px;
+
+    font-size: 34px;
+    line-height: 56px;
+
+    margin-bottom: 18px;
   }
 
   .head__subtitle {
@@ -226,16 +222,24 @@
   .head .main-wrapper {
     width: 90%;
   }
+  .header__logo {
+    gap: 0;
+  }
   
   .header__logo-img {
-    width: 172px;
-    height: 112px;
+    width: 131px;
+    height: 86px;
   }
 
   .header__nav ul {
     gap: 50px;
-    font-size: 15px;
+    font-size: 12px;
   }
+  .header__logo-span {
+    font-size: 16px;
+    padding-top: 0;
+  }
+
 
   .head__title {
     width: 100%;
@@ -244,8 +248,10 @@
 
   .head__subtitle {
     width: 66%; 
-    font-size: 23px;
+    font-size: 18px;
+    line-height: 32px;
   }
+
 
   .our-services .main-wrapper {
     width: 90%;
