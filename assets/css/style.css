@@ -61,6 +61,10 @@
   padding-bottom: 445px;
 }
 
+.head__inner-center {
+  width: 100%;
+}
+
 .head__inner {
   width: 100%;
   position: relative;
