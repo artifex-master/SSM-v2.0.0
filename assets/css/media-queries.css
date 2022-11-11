@@ -23,10 +23,6 @@
 }
 
 @media only screen and (max-width: 1740px) {
-  .head__inner-center {
-    position: absolute; 
-  }
-
   .head__title {
 
     font-size: 34px;
