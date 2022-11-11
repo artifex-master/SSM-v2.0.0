@@ -36,23 +36,8 @@
   }
 
   .head__subtitle {
-    width: 76%;
+    width: 60%;
     margin-bottom: 46px;
-  }
-
-  .head-form-title {
-    position: relative;
-    top: -16px;
-    right: 0;
-  
-  }
- 
-  .head__form-send {
-    position: relative;
-  }
-
-  .head-form__input {
-    width: 420px;
   }
 
   .head {
@@ -240,6 +225,10 @@
     width: 66%; 
     font-size: 18px;
     line-height: 32px;
+  }
+
+  .head__form-send {
+    position: relative;
   }
 
 
