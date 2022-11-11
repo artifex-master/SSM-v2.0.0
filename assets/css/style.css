@@ -432,8 +432,8 @@
   # Секция №4: "О нас"
 ***************************************************************************************************/
 .about-us__outer {
-  padding-top: 57px;
-  padding-bottom: 56px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .about-us__inner {
@@ -448,7 +448,7 @@
 .about-us__txt {
   width: 80%;
   position: absolute;
-  top: 120px;
+  top: 90px;
   left: 80px;
 
 }
